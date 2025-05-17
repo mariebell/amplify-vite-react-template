@@ -12,12 +12,11 @@ const schema = a.schema({
       content: a.string(),
     })
     .authorization((allow) => [allow.publicApiKey()]),
-  Talent: a.
+  Character: a.
     model({
       name: a.string(),
       description: a.string(),
       image: a.string(),
-      price: a.number(),
       category: a.string(),
     })
     .authorization((allow) => [allow.publicApiKey()]),
